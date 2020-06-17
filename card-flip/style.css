@@ -39,14 +39,14 @@
 }
 
 .card .front{
-  background-color: #dedede;
-  color: #444444;
+  background-color: #07a16e;
+  color: #ffffff;
   text-align: center;
 }
 
 .card .back{
-  background-color: #cdcdcd;
-  color: #444444;
+  background-color: #028a83;
+  color: #ffffff;
   transform: rotateY(180deg);
 }
 
@@ -59,6 +59,6 @@
 }
 
 button:hover{
-  background-color: #757575;
-  color: white;
+  background-color: #07dae9;
+  color: rgb(58, 56, 56);
 }
