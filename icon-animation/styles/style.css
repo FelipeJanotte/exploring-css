@@ -1,0 +1,131 @@
+@-webkit-keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill: #E3B100;
+  }
+}
+
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3120;
+    fill: #E3B100;
+  }
+}
+
+@-webkit-keyframes animate-star-moon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1810;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #E3B100;
+  }
+}
+
+@keyframes animate-star-moon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1810;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #E3B100;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #99022F;
+}
+
+body .container {
+  position: relative;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .icon {
+  width: 200px;
+}
+
+body .container .icon path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke: #E3B100;
+}
+
+body .container .icon.heart path {
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+
+body .container .icon.heart:hover path {
+  -webkit-animation: animate-heart 2s linear forwards;
+          animation: animate-heart 2s linear forwards;
+}
+
+body .container .icon.star path, body .container .icon.moon path {
+  stroke-dasharray: 1810;
+  stroke-dashoffset: 0;
+}
+
+body .container .icon.star:hover path, body .container .icon.moon:hover path {
+  -webkit-animation: animate-star-moon 2s linear forwards;
+          animation: animate-star-moon 2s linear forwards;
+}
+/*# sourceMappingURL=style.css.map */

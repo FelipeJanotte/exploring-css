@@ -1,0 +1,52 @@
+@import './keyframes';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #99022F;
+
+  .container{
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon{
+      width: 200px;
+      
+      path{
+        fill: transparent;
+        stroke-width: 10;
+        stroke: #E3B100;
+      }
+
+      &.heart{
+        path{
+          stroke-dasharray: 1560;
+          stroke-dashoffset: 0;
+        }
+        &:hover path{
+            animation: animate-heart 2s linear forwards;
+              
+        }
+      }
+      &.star, &.moon{
+        path{
+          stroke-dasharray: 1810;
+          stroke-dashoffset: 0;
+        }
+      }
+      &.star:hover path, &.moon:hover path{
+        animation: animate-star-moon 2s linear forwards;
+      }
+    }
+  }
+}

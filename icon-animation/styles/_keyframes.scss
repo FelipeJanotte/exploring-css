@@ -1,0 +1,33 @@
+@keyframes animate-heart{
+  0%{
+    stroke-dashoffset: 0;
+  }
+  40%{
+    stroke-dashoffset: 1560;
+  }
+  80%{
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100%{
+    stroke-dashoffset: 3120;
+    fill: #E3B100;
+  }
+}
+
+@keyframes animate-star-moon{
+  0%{
+    stroke-dashoffset: 0;
+  }
+  40%{
+    stroke-dashoffset: 1810;
+  }
+  80%{
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100%{
+    stroke-dashoffset: 3620;
+    fill: #E3B100;
+  }
+}
