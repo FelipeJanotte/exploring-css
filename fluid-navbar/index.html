@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Navbar</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Felipe Janotte</h1>
+      <ul>
+        <li><a data-page="home" href="#home">Home</a></li>
+        <li><a data-page="project" href="#project">Project</a></li>
+        <li><a data-page="contact" href="#contact">Contact</a></li>
+        <div class="bubble"></div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section data-page="0" class="home" id="home">
+      <h2>Home</h2>
+    </section>
+    <section data-page="1" class="project" id="project">
+      <h2>Project</h2>
+    </section>
+    <section data-page="2" class="contact" id="contact">
+      <h2>Contact</h2>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
