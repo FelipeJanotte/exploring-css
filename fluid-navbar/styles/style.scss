@@ -67,7 +67,8 @@ section{
 .bubble{
   position: absolute;
   z-index: -2;
-  background-color: #037ad9;
+  background-color: #f37b77;
+  border-radius: 8px;
   transform: scale(2);
   transition: all 0.5s ease;
 }

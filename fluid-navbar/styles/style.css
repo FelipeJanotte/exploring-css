@@ -91,7 +91,8 @@ section h2 {
 .bubble {
   position: absolute;
   z-index: -2;
-  background-color: #037ad9;
+  background-color: #f37b77;
+  border-radius: 8px;
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-transition: all 0.5s ease;
